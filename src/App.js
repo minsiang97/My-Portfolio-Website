@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import WebNavbar from './components/Navbar';
+import Homepage from './pages/Homepage/Homepage';
+import MyResume from './pages/Resume/Resume';
+import {Switch, Route} from 'react-router-dom'
+import Projects from './pages/Projects/Projects';
+import MyHomebodyCooks from './pages/HomebodyCooks/HomebodyCooks';
+import Nextagram from './pages/Nextagram/Nextagram'
+import LiveChatRoom from './pages/LiveChatRoom/LiveChatRoom';
+import Inventory from './pages/InventoryManagementSystem/InventoryManagementSystem';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   <WebNavbar/>
+   <Switch>
+     <Route exact path ="/"><Homepage/></Route>
+     <Route path = "/resume"><MyResume/></Route>
+     <Route exact path = "/projects"><Projects/></Route>
+     <Route path = "/projects/HomebodyCooks"><MyHomebodyCooks/></Route>
+     <Route path = "/projects/Nextagram"><Nextagram/></Route>
+     <Route path="/projects/LiveChatRoom"><LiveChatRoom/></Route>
+     <Route path ="/projects/Inventory"><Inventory/></Route>
+   </Switch>
+   
+   </>
   );
 }
 

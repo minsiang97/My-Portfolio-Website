@@ -1,0 +1,60 @@
+.projects {
+    margin-top: 200px;
+    width: 95%;
+    
+}
+
+.projects img {
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    object-fit: cover;
+}
+
+.projects-title {
+    position: relative
+}
+
+.projects-title:hover {
+    position:relative;
+
+}
+
+.projects-div {
+    margin: auto;
+    width: 100%;
+    color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    -moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    background: rgba(255, 255, 255, 0.952);
+}
+
+.projects-name {
+    width: 100%;
+    text-align: center;
+	font-size: 120%;
+	display: inline-block;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.projects-title:hover .projects-div,
+.projects-title.active .projects-div {
+    opacity: 1;
+    visibility: visible;
+}

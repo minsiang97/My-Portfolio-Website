@@ -1,0 +1,228 @@
+.hello {
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Poppins', sans-serif;
+}
+
+.name {
+    font-family: 'Rubik', sans-serif;
+    font-size: 300%;
+}
+
+.section {
+    padding-top: 100px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.profile {
+    margin-top: 50px;
+}
+
+.hire-button {
+    margin-top: 50px;
+    width: 130px;
+    height: 50px;
+}
+
+.description {
+    color: black;
+    font-size: larger;
+    margin-top: 30px;
+}
+
+.profile-image {
+    margin-top: 50px;
+    width: 60%;
+}
+
+.about-me {
+    font-weight: bolder;
+}
+
+.about-me-description {
+    color: black;
+    font-size: larger;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.about-me-title {
+    border-bottom: 1px black solid;
+    width: 90%;
+}
+
+.my-project{
+    width: 90%;
+    border-bottom: 1px solid black;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.my-project-header {
+    font-size: x-large;
+}
+
+.card-image {
+    background-size: cover;
+}
+
+.card-text {
+    font-size: larger;
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    padding-left: 0;
+    
+}
+
+.card-title {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.card-button {
+    width: 50%;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.working-experience{
+    width: 90%;
+    border-bottom: 1px solid black;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.working {
+    margin: auto;
+    position: relative;
+}
+
+.working:hover {
+    position:relative;
+
+}
+
+.working-image {
+    width: 100%;
+}
+
+.working-div {
+    margin: auto;
+    width: 100%;
+    color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    -moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    background: rgba(255, 255, 255, 0.952);
+}
+
+.working-name {
+    width: 100%;
+    text-align: center;
+	font-size: larger;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.working:hover .working-div,
+.working.active .working-div {
+    opacity: 1;
+    visibility: visible;
+}
+
+.working-description {
+    font-size: larger;
+    text-align: justify;
+}
+
+.professional-skills {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.professional {
+    position: relative;
+}
+
+.professional-div {
+    margin: auto;
+    width: 100%;
+    color: black;
+    font-size: xx-large;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    -moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    background: rgba(255, 255, 255, 0.952);
+    margin-bottom: 10%;
+}
+
+.professional-name {
+    width: 100%;
+    text-align: center;
+	font-size: 80%;
+	display: inline-block;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.professional:hover .professional-div,
+.professional.active .professional-div {
+    opacity: 1;
+    visibility: visible;
+}
+
+.footer {
+    background-color: rgba(29, 25, 25, 0.979);
+    padding-bottom: 50px;
+}
+
+.footer-text {
+    font-family: 'Playfair Display', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 270%;
+}
+
+.footer-row {
+    margin-left: 20px;
+}
