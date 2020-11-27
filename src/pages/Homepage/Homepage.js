@@ -33,6 +33,7 @@ import {Link} from 'react-router-dom'
 import './Homepage.css'
 
 const Homepage = () => {
+    const scrollToBottom = () => window.scrollTo({top:5000, behavior:"smooth"})
     return (
         <>
         <Container fluid className="section pb-5" style= {{
@@ -49,7 +50,7 @@ const Homepage = () => {
                         <p className="description text-justify">A fresh graduate of Bachelor's Degree of Accounting and Finance from Sunway University and Full Stack Coding Class from Next Academy </p>
                         <p className="description text-justify">I have learnt 8 web development languages and framework in 10 weeks of the Full Stack Coding Class. </p>
                         <p className="description text-justify">Currently I am looking for a position of Full Stack Developer</p>
-                        <Button variant="dark" className="hire-button">Hire Me</Button>
+                        <Button onClick={() => scrollToBottom() } variant="dark" className="hire-button">Hire Me</Button>
                     </div>
                     
                 </Col>
@@ -264,7 +265,7 @@ const Homepage = () => {
                 </Col>
             </Row>
         </Container>
-        <Container fluid className="footer">
+        <Container fluid className="footer" id="footer">
             <Row className="footer-row">
                 <Col md={7} xs={12} className="footer-text">
                     <p>If you think I am a good fit for your team, lets <b>connect</b> and chat more!</p>

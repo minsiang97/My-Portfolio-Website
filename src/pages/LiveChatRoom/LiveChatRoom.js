@@ -52,6 +52,13 @@ const LiveChatRoom = () => {
             </Row>
         </Container>
 
+        <Container fluid className="learnings p-5">
+            <h1>My Learnings</h1>
+            <p className="learnings-title">The concept of generating client token as user identity</p>
+            <p className="learnings-description">I learnt to generate a specific client token for every users using socket.io and the token is acting as an identity for the specific user. For every token generated, it will be stored in a place called local storage and removed it when the user signed out. </p>
+            <p className="learnings-description">I learnt to be always prepared to take up and face any new challenges and improve myself through them.</p>
+        </Container>
+
         <Container fluid className="outcome">
             <Jumbotron className="bg-white">
                 <h1>Outcome</h1>

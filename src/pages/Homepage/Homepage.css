@@ -1,3 +1,8 @@
+body {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
 .hello {
     font-weight: bold;
     font-size: larger;
@@ -70,6 +75,7 @@
 
 .card-text {
     font-size: larger;
+    text-align: justify;
 }
 
 .card {
