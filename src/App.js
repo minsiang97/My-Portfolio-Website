@@ -17,7 +17,7 @@ function App() {
    <Switch>
      <Route exact path ="/"><Homepage/></Route>
      <Route path = "/resume"><MyResume/></Route>
-     <Route exact path = "/projects"><Projects/></Route>
+     <Route exact path = "/projects/"><Projects/></Route>
      <Route path = "/projects/HomebodyCooks"><MyHomebodyCooks/></Route>
      <Route path = "/projects/Nextagram"><Nextagram/></Route>
      <Route path="/projects/LiveChatRoom"><LiveChatRoom/></Route>
