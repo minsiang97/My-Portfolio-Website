@@ -16,7 +16,7 @@ const Projects = () => {
             <Row className="justify-content-around">
                 <Col md={6} xs={12}>
                     <div className="projects-title">
-                    <img className="w-100 mb-5" src={HomebodyCooks}></img>
+                    <img className="w-100 mb-5" src={HomebodyCooks} alt=""></img>
                     <a href="/projects/HomebodyCooks"><div className="projects-div">
                         <p className="projects-name">Homebody Cooks</p>
                         </div></a>
@@ -25,7 +25,7 @@ const Projects = () => {
                 </Col>
                 <Col md={6} xs={12}>
                     <div className="projects-title">
-                        <img className="w-100 mb-5" src={Nextagram1}></img>
+                        <img className="w-100 mb-5" src={Nextagram1} alt=""></img>
                         <a href="/projects/Nextagram"><div className="projects-div">
                             <p className="projects-name">Nextagram</p>
                         </div></a>
@@ -34,7 +34,7 @@ const Projects = () => {
                 </Col>
                 <Col md={6} xs={12}>
                     <div className="projects-title">
-                        <img className="w-100 mb-5" src={LiveChatRoom1}></img>
+                        <img className="w-100 mb-5" src={LiveChatRoom1} alt=""></img>
                         <a href="/projects/LiveChatRoom"><div className="projects-div">
                             <p className="projects-name">Live Chatroom</p>
                         </div></a>
@@ -43,7 +43,7 @@ const Projects = () => {
                 </Col>
                 <Col md={6} xs={12}>
                     <div className="projects-title">
-                        <img className="w-100 mb-5" src={InventoryManagement}></img>
+                        <img className="w-100 mb-5" src={InventoryManagement} alt=""></img>
                         <a href= "/projects/Inventory"><div className="projects-div">
                             <p className="projects-name">Inventory Management System</p>
                         </div></a>
