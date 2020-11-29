@@ -6,7 +6,6 @@ import HomebodyCooks from '../../images/HomebodyCooks.png';
 import Nextagram1 from '../../images/Nextagram1.png';
 import LiveChatRoom1 from '../../images/LiveChatRoom1.png';
 import InventoryManagement from '../../images/InventoryManagement.png';
-import {Link} from 'react-router-dom'
 import './Project.css'
 
 
