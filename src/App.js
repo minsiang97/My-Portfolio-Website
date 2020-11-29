@@ -9,7 +9,6 @@ import MyHomebodyCooks from './pages/HomebodyCooks/HomebodyCooks';
 import Nextagram from './pages/Nextagram/Nextagram'
 import LiveChatRoom from './pages/LiveChatRoom/LiveChatRoom';
 import Inventory from './pages/InventoryManagementSystem/InventoryManagementSystem';
-import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
@@ -24,7 +23,7 @@ function App() {
      <Route path="/projects/LiveChatRoom"><LiveChatRoom/></Route>
      <Route path ="/projects/Inventory"><Inventory/></Route>
    </Switch>
-   <ScrollToTop/>
+  
    
    </>
   );

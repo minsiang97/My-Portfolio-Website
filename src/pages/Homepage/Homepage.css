@@ -39,11 +39,19 @@ body {
 
 .profile-image {
     margin-top: 50px;
-    width: 60%;
+    width: 73%;
+}
+
+.arrow-p {
+    text-decoration: none;
 }
 
 .about-me {
     font-weight: bolder;
+}
+
+.about-me-row {
+    margin-top: 50px;
 }
 
 .about-me-description {
@@ -54,6 +62,7 @@ body {
 }
 
 .about-me-title {
+    padding-top: 100px;
     border-bottom: 1px black solid;
     width: 90%;
 }
@@ -218,7 +227,7 @@ body {
 
 .footer {
     background-color: rgba(29, 25, 25, 0.979);
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .footer-text {
@@ -226,9 +235,69 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
     color: white;
-    font-size: 270%;
+    font-size: 200%;
 }
 
 .footer-row {
     margin-left: 20px;
+}
+
+
+.arrow-row {
+    position: relative;
+    text-align: center;
+    animation: scrollTop 0.5s ease alternate infinite;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.arrow-row p {
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    margin: auto;
+}
+
+
+.arrow-down {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+
+.scroll-to-top:hover {
+    animation: scrollTop 0.5s ease alternate infinite;
+}
+
+.scroll-to-top {
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+}
+
+.scroll-to-top p {
+    color: white;
+    margin: 0;
+    font-size: small;
+}
+
+.arrow {
+    margin: auto;
+}
+
+@keyframes scrollTop {
+    from {
+        transform: translateY(5px);
+    }
+    to {
+        transform: translateY(-1px);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
 }

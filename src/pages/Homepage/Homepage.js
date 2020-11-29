@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Bugs_Bunny from '../../images/Bugs_Bunny.png';
+import myself1 from '../../images/myself1.png';
 import HomebodyCooks from '../../images/HomebodyCooks.png';
 import Nextagram1 from '../../images/Nextagram1.png';
 import LiveChatRoom1 from '../../images/LiveChatRoom1.png';
@@ -29,19 +29,25 @@ import mailgun from '../../images/mailgun.png';
 import heroku from '../../images/heroku.jpg';
 import netlify from '../../images/netlify.png';
 import {SocialIcon} from 'react-social-icons';
+import {ChevronDown, Mouse} from 'react-bootstrap-icons'
+import hardworking from '../../images/hard-working.png'
+import teamwork from '../../images/teamwork.jpg'
+import fullstack from '../../images/fullstack.png'
+import knowledge from '../../images/knowledge.png'
 import {Link} from 'react-router-dom'
 import './Homepage.css'
 
 const Homepage = () => {
-    const scrollToBottom = () => window.scrollTo({top:5000, behavior:"smooth"})
+    const scrollToBottom = () => window.scrollTo({top:650, behavior:"smooth"})
+    const scrollTop = () => window.scrollTo({top:0, behavior:"smooth"})
     return (
         <>
-        <Container fluid className="section pb-5" style= {{
+        <Container fluid className="section pb-4" style= {{
             backgroundImage : `url(https://preview.colorlib.com/theme/ronin/img/banner/home-banner.jpg)`,
         }}>
             <Row className="justify-content-center">
                 <Col lg={5} md={5} s={12} xs={12} className="pl-5 text-center">
-                    <ImageFadeIn opacityTransition="3" className="profile-image" src={Bugs_Bunny}></ImageFadeIn>
+                    <ImageFadeIn opacityTransition='3' className="profile-image" src={myself1}></ImageFadeIn>
                 </Col>
                 <Col lg ={5} md={5} s={12} xs={12}>
                     <div className="profile">
@@ -50,24 +56,34 @@ const Homepage = () => {
                         <p className="description text-justify">A fresh graduate of Bachelor's Degree of Accounting and Finance from Sunway University and Full Stack Coding Class from Next Academy </p>
                         <p className="description text-justify">I have learnt 8 web development languages and framework in 10 weeks of the Full Stack Coding Class. </p>
                         <p className="description text-justify">Currently I am looking for a position of Full Stack Developer</p>
-                        <Button onClick={() => scrollToBottom() } variant="dark" className="hire-button">Hire Me</Button>
                     </div>
                     
                 </Col>
                 
             </Row>
+            <a href="#about-me"><Row className="arrow-row">
+                <p className="arrow-p">Learn more about me</p>
+               <ChevronDown className="arrow-down" fill="black" height="20" width="20"/>
+            </Row></a>
         </Container>
-        <Container fluid className="about-me-title">
-            <Row className="justify-content-center mt-5">
+        <Container fluid className="about-me-title" id="about-me">
+            <h2 className="about-me">About Me</h2>
+            <Row className="about-me-row"> 
                 <Col lg={3} md={3} xs={12}>
-                    <h2 className="about-me">About Me</h2>
-                </Col>
-                <Col lg={4} md={4} xs ={12}>
+                    <img className="w-100" src={hardworking}></img>
                     <p className="about-me-description">I am a hardworking and highly motivated learner with a passion of learning different web development language and framework. I am also strongly interested in people, culture and diversity.</p>
+                </Col>
+                <Col lg={3} md={3} xs={12}>
+                    <img className="w-100" src={teamwork}></img>
                     <p className="about-me-description">I enjoy working with people and solving problems together and with a great interpersonal skills makes me a great team player. Also, as a proactive learner, I always keep myself up to date with the latest knowledge and updates in tools, software, languages and framework.</p>
-                    <p className="about-me-description">I have records and experiences in delivering both frontend and backend projects using all languages and framework learned.</p>
-                    <p className="about-me-description">I have completed 5 web applications includes Homebody Cooks, 2 Nextagrams, Live Chatroom and Inventory Management System.</p>
-                    <p className="about-me-description">Aside from the completed projects, I believe that with my accounting knowledge and my skills with the language and framework, it would be very useful in certain companies.</p>
+                </Col>
+                <Col lg={3} md={3} xs={12}>
+                    <img className="w-100" src={fullstack}></img>
+                    <p className="about-me-description">I have records and experiences in delivering both frontend and backend projects using all languages and framework learned. I have completed 5 web applications includes Homebody Cooks, 2 Nextagrams, Live Chatroom and Inventory Management System.</p>
+                </Col>
+                <Col lg={3} md={3} xs={12}>
+                    <img className="w-100" src={knowledge}></img>
+                    <p className="about-me-description">Aside from the completed projects, I believe that with my accounting knowledge and my skills with the language and framework, it would be very useful for certain companies.</p>
                 </Col>
             </Row>
         </Container>
@@ -275,6 +291,12 @@ const Homepage = () => {
                 <SocialIcon className="ml-3 " url="https://www.linkedin.com/in/min-siang-ong-2ba166170/" bgColor="white"></SocialIcon>
                 <SocialIcon className="ml-3 " network="mailto" url="mailto:ongminsiang@gmail.com" bgColor="white"></SocialIcon>
                 <SocialIcon className="ml-3 " url="https://github.com/minsiang97" bgColor="white"></SocialIcon>
+            </Row>
+            <Row className="mt-5">
+                <div onClick={()=> scrollTop()} className="scroll-to-top">
+                    <p>Back to Top</p>
+                    <Mouse className="arrow" fill="white" height="20" width="20"/>
+                </div>
             </Row>
         </Container>
         
