@@ -47,7 +47,7 @@ const Homepage = () => {
         }}>
             <Row className="justify-content-center">
                 <Col lg={5} md={5} s={12} xs={12} className="pl-5 text-center">
-                    <ImageFadeIn opacityTransition='3' className="profile-image" src={myself1}></ImageFadeIn>
+                    <ImageFadeIn opacityTransition='3' className="profile-image" src={myself1} alt=""></ImageFadeIn>
                 </Col>
                 <Col lg ={5} md={5} s={12} xs={12}>
                     <div className="profile">
@@ -70,19 +70,19 @@ const Homepage = () => {
             <h2 className="about-me">About Me</h2>
             <Row className="about-me-row"> 
                 <Col lg={3} md={3} xs={12}>
-                    <img className="w-100" src={hardworking}></img>
+                    <img className="w-100" src={hardworking} alt=""></img>
                     <p className="about-me-description">I am a hardworking and highly motivated learner with a passion of learning different web development language and framework. I am also strongly interested in people, culture and diversity.</p>
                 </Col>
                 <Col lg={3} md={3} xs={12}>
-                    <img className="w-100" src={teamwork}></img>
+                    <img className="w-100" src={teamwork} alt=""></img>
                     <p className="about-me-description">I enjoy working with people and solving problems together and with a great interpersonal skills makes me a great team player. Also, as a proactive learner, I always keep myself up to date with the latest knowledge and updates in tools, software, languages and framework.</p>
                 </Col>
                 <Col lg={3} md={3} xs={12}>
-                    <img className="w-100" src={fullstack}></img>
+                    <img className="w-100" src={fullstack} alt=""></img>
                     <p className="about-me-description">I have records and experiences in delivering both frontend and backend projects using all languages and framework learned. I have completed 5 web applications includes Homebody Cooks, 2 Nextagrams, Live Chatroom and Inventory Management System.</p>
                 </Col>
                 <Col lg={3} md={3} xs={12}>
-                    <img className="w-100" src={knowledge}></img>
+                    <img className="w-100" src={knowledge} alt=""></img>
                     <p className="about-me-description">Aside from the completed projects, I believe that with my accounting knowledge and my skills with the language and framework, it would be very useful for certain companies.</p>
                 </Col>
             </Row>
@@ -93,7 +93,7 @@ const Homepage = () => {
             <Row className="justify-content-center">
                 <Col lg={6} md={6} sm={12} xs={12} className="mt-5">
                     <Card className="card">
-                        <Card.Img className="card-image" variant="top" src={HomebodyCooks} />
+                        <Card.Img className="card-image" variant="top" src={HomebodyCooks} alt="" />
                         <Card.Body>
                             <Card.Title className="card-title">Homebody Cooks</Card.Title>
                             <Card.Text className="card-text">
@@ -105,7 +105,7 @@ const Homepage = () => {
                 </Col>
                 <Col lg={6} md={6} sm={12} xs={12} className="mt-5">
                     <Card className="card">
-                        <Card.Img className="card-image" variant="top" src={Nextagram1} />
+                        <Card.Img className="card-image" variant="top" src={Nextagram1} alt=""/>
                         <Card.Body>
                             <Card.Title className="card-title">Nextagram</Card.Title>
                             <Card.Text className="card-text">
@@ -117,7 +117,7 @@ const Homepage = () => {
                 </Col>
                 <Col lg={6} md={6} sm={12} xs={12} className="mt-5 mb-5">
                     <Card className="card">
-                        <Card.Img className="card-image" variant="top" src={LiveChatRoom1} />
+                        <Card.Img className="card-image" variant="top" src={LiveChatRoom1} alt=""/>
                         <Card.Body>
                             <Card.Title className="card-title">Live Chatroom</Card.Title>
                             <Card.Text className="card-text">
@@ -129,7 +129,7 @@ const Homepage = () => {
                 </Col>
                 <Col lg={6} md={6} sm={12} xs={12} className="mt-5 mb-5">
                     <Card className="card">
-                        <Card.Img className="card-image" variant="top" src={InventoryManagement} />
+                        <Card.Img className="card-image" variant="top" src={InventoryManagement} alt=""/>
                         <Card.Body className="card-body">
                             <Card.Title className="card-title">Inventory Management System</Card.Title>
                             <Card.Text className="card-text">
@@ -146,7 +146,7 @@ const Homepage = () => {
             <Row className="justify-content-around">
                 <Col lg={4} md={4} sm={12} xs={12} className="mt-5 mb-5">
                     <div className="working">
-                        <img src={peppermill} className="w-100 working-image"></img>
+                        <img src={peppermill} className="w-100 working-image" alt=""></img>
                         <div className="working-div">
                             <p className="working-name">Peppermill Casino</p>
                         </div>
@@ -158,7 +158,7 @@ const Homepage = () => {
                 </Col>
                 <Col lg={4} md={4} sm={12} xs={12} className="mt-5 mb-5">
                     <div className="working">
-                        <img src={yyc1} className="w-100 working-image"></img>
+                        <img src={yyc1} className="w-100 working-image" alt=""></img>
                         <div className="working-div">
                             <p className="working-name">YYC & Co</p>
                         </div>
@@ -169,7 +169,7 @@ const Homepage = () => {
                 </Col>
                 <Col lg={4} md={4} sm={12} xs={12} className="mt-5 mb-5">
                     <div className="working">
-                        <img src={kw} className="w-100 working-image"></img>
+                        <img src={kw} className="w-100 working-image" alt=""></img>
                         <div className="working-div">
                             <p className="working-name">Kah Wah</p>
                         </div>
@@ -186,31 +186,31 @@ const Homepage = () => {
             <Row className="mt-5 justify-content-center">
                 
                 <Col lg={2} md={2} xs={12} className="m-auto text-center professional">
-                    <img className="mb-5" src={HTML}></img>
+                    <img className="mb-5" src={HTML} alt=""></img>
                     <div className="professional-div">
                         <p className="professional-name">HTML</p>
                     </div>
                 </Col>
                 <Col lg={2} md={2} xs ={12} className="m-auto text-center professional">
-                    <img className="mb-5" src={css}></img>
+                    <img className="mb-5" src={css} alt=""></img>
                     <div className="professional-div">
                         <p className="professional-name">CSS</p>
                     </div>
                 </Col>
                 <Col lg={2} md={2} xs ={12} className="m-auto text-center professional">
-                    <img className="mb-5" src={js}></img>
+                    <img className="mb-5" src={js} alt=""></img>
                     <div className="professional-div">
                         <p className="professional-name">Javascript</p>
                     </div>
                 </Col>
                 <Col lg={2} md={2} xs ={12} className="m-auto text-center professional">
-                    <img className="mb-5" src={bootstrap}></img> 
+                    <img className="mb-5" src={bootstrap} alt=""></img> 
                     <div className="professional-div">
                         <p className="professional-name">Bootstrap</p>
                     </div>
                 </Col>
                 <Col lg={2} md={2} xs ={12} className="m-auto text-center professional">
-                    <img className="mb-5" src={react}></img>
+                    <img className="mb-5" src={react} alt=""></img>
                     <div className="professional-div">
                         <p className="professional-name">React</p>
                     </div>   
@@ -218,31 +218,31 @@ const Homepage = () => {
             </Row>
             <Row className="mt-5 justify-content-center">
                 <Col lg={2} md={2} xs ={12} className="m-auto text-center professional">
-                    <img className="mb-5" src={python1}></img>
+                    <img className="mb-5" src={python1} alt=""></img>
                     <div className="professional-div">
                         <p className="professional-name">Python</p>
                     </div>
                 </Col>
                 <Col lg={2} md={2} xs ={12} className="m-auto text-center professional">
-                    <img className="mb-5" src={flask}></img>
+                    <img className="mb-5" src={flask} alt=""></img>
                     <div className="professional-div">
                         <p className="professional-name">Flask</p>
                     </div>
                 </Col>
                 <Col lg={2} md={2} xs ={12} className="m-auto text-center professional">
-                    <img className="mb-5" src={sql}></img>
+                    <img className="mb-5" src={sql} alt=""></img>
                     <div className="professional-div">
                         <p className="professional-name">SQL</p>
                     </div>
                 </Col>
                 <Col lg={2} md={2} xs ={12}className="m-auto text-center professional">
-                    <img className="mb-5" src={vscode}></img>
+                    <img className="mb-5" src={vscode} alt=""></img>
                     <div className="professional-div">
                         <p className="professional-name">Visual Studio Code</p>
                     </div>
                 </Col>
                 <Col lg={2} md={2} xs ={12} className="m-auto text-center professional">
-                    <img className="mb-5" src={GitHub}></img>
+                    <img className="mb-5" src={GitHub} alt=""></img>
                     <div className="professional-div">
                         <p className="professional-name">Github</p>
                     </div>   
@@ -250,31 +250,31 @@ const Homepage = () => {
             </Row>
             <Row className="mt-5 justify-content-center">
                 <Col lg={2} md={2} xs ={12} className="m-auto text-center professional">
-                    <img className="mb-5" src={aws}></img>
+                    <img className="mb-5" src={aws} alt=""></img>
                     <div className="professional-div">
                         <p className="professional-name">Amazon Web Service</p>
                     </div>
                 </Col>
                 <Col lg={2} md={2} xs ={12} className="m-auto text-center professional">
-                    <img className="mb-5" src={braintree}></img>
+                    <img className="mb-5" src={braintree} alt=""></img>
                     <div className="professional-div">
                         <p className="professional-name">Braintree</p>
                     </div>
                 </Col>
                 <Col lg={2} md={2} xs ={12} className="m-auto text-center professional">
-                    <img className="mb-5" src={mailgun}></img>
+                    <img className="mb-5" src={mailgun} alt=""></img>
                     <div className="professional-div">
                         <p className="professional-name">Mailgun</p>
                     </div>
                 </Col>
                 <Col lg={2} md={2} xs ={12} className="m-auto text-center professional">
-                    <img className="mb-5" src={heroku}></img>
+                    <img className="mb-5" src={heroku} alt=""></img>
                     <div className="professional-div">
                         <p className="professional-name">Heroku</p>
                     </div>
                 </Col>
                 <Col lg={2} md={2} xs ={12} className="m-auto text-center professional">
-                    <img className="mb-5" src={netlify}></img>
+                    <img className="mb-5" src={netlify} alt=""></img>
                     <div className="professional-div">
                         <p className="professional-name">Netlify</p>
                     </div>
