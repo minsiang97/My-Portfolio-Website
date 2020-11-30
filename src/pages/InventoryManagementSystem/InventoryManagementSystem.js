@@ -18,7 +18,7 @@ const Inventory = () => {
                     <img className="w-100" src={InventoryManagement}></img>
                 </Col>
             </Row>
-            <Row className="justify-content-center mt-3">
+            <Row className="justify-content-center mt-3 pl-3">
                 <p className="inventory">Inventory Management System</p>
             </Row>
             <Row>
