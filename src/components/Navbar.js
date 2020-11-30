@@ -30,7 +30,7 @@ const WebNavbar = () => {
                 <SocialIcon className="mt-1 socialIcon" url="https://www.linkedin.com/in/min-siang-ong-2ba166170/" bgColor="transparent" fgColor="black"></SocialIcon>
                 <SocialIcon className="mt-1 socialIcon" network="mailto" url="mailto:ongminsiang@gmail.com" bgColor="transparent" fgColor="black"></SocialIcon>
                 <SocialIcon className="mt-1 socialIcon" url="https://github.com/minsiang97" bgColor="transparent" fgColor="black"></SocialIcon>
-                <Link to ="/resume"><button className="navbar-button btn btn-dark">My Resume</button></Link>
+                <Link to ="/resume" target="_blank"><button className="navbar-button btn btn-dark">My Resume</button></Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
