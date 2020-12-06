@@ -41,7 +41,26 @@
 .work{
     color: black !important;
     font-size: large;
+    position: relative;
 }
+  
+.work::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgb(24, 23, 23);
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .work:hover::before {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  }
 
 .navbar {
     padding: 20px;
