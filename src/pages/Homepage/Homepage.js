@@ -60,7 +60,7 @@ const Homepage = () => {
                 </Col>
                 
             </Row>
-            <Link to="about-me" smooth={true} duration={100} delay={0}><Row className="arrow-row">
+            <Link to="about-me" smooth={true} duration={300} delay={0}><Row className="arrow-row">
                 <p className="arrow-p">Learn more about me</p>
                <ChevronDown className="arrow-down" fill="black" height="20" width="20"/>
             </Row></Link>
@@ -292,10 +292,10 @@ const Homepage = () => {
                 <SocialIcon className="ml-3 " url="https://github.com/minsiang97" bgColor="white"></SocialIcon>
             </Row>
             <Row className="mt-5 scroll-row">
-                <Link to = "header" smooth={true} duration={100} delay={0}><div className="scroll-to-top">
+                <div onClick={() => scroll.scrollToTop(0)} className="scroll-to-top">
                     <p>Back to Top</p>
                     <Mouse className="arrow" fill="white" height="20" width="20"/>
-                </div></Link>
+                </div>
             </Row>
         </Container>
         
