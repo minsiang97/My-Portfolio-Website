@@ -98,7 +98,7 @@ const Homepage = () => {
                             <Card.Text className="card-text">
                             Created on light of covid-19 pandemic. Deliver ingredients to people's doorstep for them to cook at home.
                             </Card.Text>
-                            <a href="/projects/HomebodyCooks"><Button variant="dark" className="card-button">View Project</Button></a>
+                            <a href="/projects/HomebodyCooks"><Button variant="dark" className="card-button"><div>View Project</div></Button></a>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -110,7 +110,7 @@ const Homepage = () => {
                             <Card.Text className="card-text">
                             Recreate the web application of Instagram twice with one using React.js and other using Python, Flask, SQL, HTML and CSS.
                             </Card.Text>
-                            <a href="/projects/Nextagram"><Button variant="dark" className="card-button">View Project</Button></a>
+                            <a href="/projects/Nextagram"><Button variant="dark" className="card-button"><div>View Project</div></Button></a>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -122,7 +122,7 @@ const Homepage = () => {
                             <Card.Text className="card-text">
                             Created this web application using React.js to allow online users to chat together.
                             </Card.Text>
-                            <a href="/projects/LiveChatRoom"><Button variant="dark" className="card-button">View Project</Button></a>
+                            <a href="/projects/LiveChatRoom"><Button variant="dark" className="card-button"><div>View Project</div></Button></a>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -134,7 +134,7 @@ const Homepage = () => {
                             <Card.Text className="card-text">
                             My first exercise when learning Python, Flask and SQL. It is a system to help company to manage their inventory.
                             </Card.Text>
-                            <a href="/projects/Inventory"><Button variant="dark" className="card-button">View Project</Button></a>
+                            <a href="/projects/Inventory"><Button variant="dark" className="card-button"><div>View Project</div></Button></a>
                         </Card.Body>
                     </Card>
                 </Col>
