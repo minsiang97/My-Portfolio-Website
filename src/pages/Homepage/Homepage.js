@@ -34,15 +34,14 @@ import hardworking from '../../images/hard-working.png'
 import teamwork from '../../images/teamwork.jpg'
 import fullstack from '../../images/fullstack.png'
 import knowledge from '../../images/knowledge.png'
-import {Link} from 'react-router-dom'
+import {Link} from 'react-scroll'
+import {animateScroll as scroll} from 'react-scroll'
 import './Homepage.css'
 
 const Homepage = () => {
-    const scrollToBottom = () => window.scrollTo({top:650, behavior:"smooth"})
-    const scrollTop = () => window.scrollTo({top:0, behavior:"smooth"})
     return (
         <>
-        <Container fluid className="section pb-4" style= {{
+        <Container fluid className="section pb-4" id="header" style= {{
             backgroundImage : `url(https://preview.colorlib.com/theme/ronin/img/banner/home-banner.jpg)`,
         }}>
             <Row className="justify-content-center">
@@ -61,10 +60,10 @@ const Homepage = () => {
                 </Col>
                 
             </Row>
-            <a href="#about-me"><Row className="arrow-row">
+            <Link to="about-me" smooth={true} duration={100} delay={0}><Row className="arrow-row">
                 <p className="arrow-p">Learn more about me</p>
                <ChevronDown className="arrow-down" fill="black" height="20" width="20"/>
-            </Row></a>
+            </Row></Link>
         </Container>
         <Container fluid className="about-me-title" id="about-me">
             <h2 className="about-me">About Me</h2>
@@ -292,11 +291,11 @@ const Homepage = () => {
                 <SocialIcon className="ml-3 " network="mailto" url="mailto:ongminsiang@gmail.com" bgColor="white"></SocialIcon>
                 <SocialIcon className="ml-3 " url="https://github.com/minsiang97" bgColor="white"></SocialIcon>
             </Row>
-            <Row className="mt-5">
-                <div onClick={()=> scrollTop()} className="scroll-to-top">
+            <Row className="mt-5 scroll-row">
+                <Link to = "header" smooth={true} duration={100} delay={0}><div className="scroll-to-top">
                     <p>Back to Top</p>
                     <Mouse className="arrow" fill="white" height="20" width="20"/>
-                </div>
+                </div></Link>
             </Row>
         </Container>
         

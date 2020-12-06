@@ -44,6 +44,7 @@ body {
 
 .arrow-p {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .about-me {
@@ -269,14 +270,20 @@ a:hover {
     cursor: pointer;
 }
 
-.scroll-to-top:hover {
-    animation: scrollTop 0.5s ease alternate infinite;
+
+.scroll-row {
+    position: relative;
+    padding-bottom: 40px;
+    text-align: center;
 }
 
 .scroll-to-top {
     cursor: pointer;
     margin: auto;
     text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .scroll-to-top p {
